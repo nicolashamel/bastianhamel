@@ -358,3 +358,160 @@ audio{
     border-radius:5px;
     transition:0.3s;
 }
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* Smartphones und Tablets */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    header {
+        padding: 15px 20px;
+        min-height: 60px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+
+    /* Hamburger Button */
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 5px;
+        color: #000;
+    }
+
+
+    /* Navigation */
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid #eee;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 20px 20px;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+
+    /* Works-Seite */
+
+    .page-content_1 {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 90px 15px 50px;
+    }
+
+
+    /* Bilder */
+
+    .pictures,
+    .pictures-large {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+
+    /* Einzelne Arbeiten */
+
+    .works {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    }
+
+
+    /* Beschreibung unter Bildern */
+
+    .title {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    /* Slideshow */
+
+    .slideshow {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .slide-container {
+        width: 85%;
+    }
+
+    .slide-container .pictures,
+    .slide-container .pictures-large {
+        width: 100%;
+    }
+
+    .prev,
+    .next {
+        font-size: 22px;
+        padding: 5px;
+    }
+
+
+    /* Contact */
+
+    .page-content {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 100px 20px 50px;
+    }
+
+    .page-content h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .page-content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+}
